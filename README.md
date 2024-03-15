@@ -1,4 +1,4 @@
-### RobustSAM: Segment Anything Robustly on Degraded Images
+### RobustSAM: Segment Anything Robustly on Degraded Images (CVPR 2024)
 
 <!--
 **robustsam/RobustSAM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
