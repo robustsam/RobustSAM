@@ -6,9 +6,6 @@ Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
 [Project Page]() | [Paper]() | [Video]() | [Dataset]()
 
-[![arXiv]()
-
-![image]()
 
 
 ## Updates
