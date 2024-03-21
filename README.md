@@ -13,29 +13,7 @@ Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
 
 ## Setup
-You can use the following to set up a Conda environment.\
 
-```
-
-```
-Download our pretrained model [HERE](). Put the pretrained model in a `runs` folder.
-
-We put the datasets into a folder outside of the repo to create the following file structure
-```python
-
-```
-
-
-## Usage
-```
-
-```
-
-
-
-To test:
-```
-```
 
 
 ## Reference
