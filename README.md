@@ -1,5 +1,5 @@
 # RobustSAM: Segment Anything Robustly on Degraded Images 
-(CVPR 2024 Highlight)
+# (CVPR 2024 Highlight)
 
 Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
