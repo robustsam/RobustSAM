@@ -13,7 +13,12 @@ Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
 
 ## Setup
-
+1) Use "nvidia-smi" command to check your CUDA version.
+2) Replace the CUDA version with yours in command below.
+```
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu[$YOUR_CUDA_VERSION]
+# For example: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117 # cu117 = CUDA_version_11.7
+```
 
 
 ## Reference
