@@ -16,7 +16,7 @@ Segment Anything Model (SAM) has emerged as a transformative approach in image s
 
 Our method leverages the pre-trained SAM model with only marginal parameter increments and computational requirements. The additional parameters of RobustSAM can be optimized within 30 hours on eight GPUs, demonstrating its feasibility and practicality for typical research laboratories. We also introduce the Robust-Seg dataset, a collection of 688K image-mask pairs with different degradations designed to train and evaluate our model optimally. Extensive experiments across various segmentation tasks and datasets confirm RobustSAM's superior performance, especially under zero-shot conditions, underscoring its potential for extensive real-world application. Additionally, our method has been shown to effectively improve the performance of SAM-based downstream tasks such as single image dehazing and deblurring.
 
-<img width="1096" alt="image" src='figs/sam-hf-framework.png'>
+<img width="1096" alt="image" src='figures/architecture.jpg'>
 
 ## Setup
 1) Create a conda environment and activate it.
@@ -63,12 +63,12 @@ In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 ## Visual Comparison
 <table>
   <tr>
-    <td><img src="visual_demo/1.gif" width="250"></td>
-    <td><img src="visual_demo/2.gif" width="250"></td>
+    <td><img src="figures/gif_output/blur_back_n_forth.gif" width="250"></td>
+    <td><img src="figures/gif_output/haze_back_n_forth.gif" width="250"></td>
   </tr>
   <tr>
-    <td><img src="visual_demo/4.gif" width="250"></td>
-    <td><img src="visual_demo/5.gif" width="250"></td>
+    <td><img src="figures/gif_output/lowlight_back_n_forth.gif" width="250"></td>
+    <td><img src="figures/gif_output/rain_back_n_forth.gif" width="250"></td>
   </tr>
 </table>
 
