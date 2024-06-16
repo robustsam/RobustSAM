@@ -8,8 +8,9 @@ Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
 
 ## Updates
-- Feb 2024: ✨ RobustSAM was accepted into CVPR 2024!
 - June 2024: ✨ Inference code of RobustSAM was released!
+- Feb 2024: ✨ RobustSAM was accepted into CVPR 2024!
+
 
 ## Introduction
 Segment Anything Model (SAM) has emerged as a transformative approach in image segmentation, acclaimed for its robust zero-shot segmentation capabilities and flexible prompting system. Nonetheless, its performance is challenged by images with degraded quality. Addressing this limitation, we propose the Robust Segment Anything Model (RobustSAM), which enhances SAM's performance on low-quality images while preserving its promptability and zero-shot generalization.
@@ -61,18 +62,18 @@ In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 <table>
   <tr>
     <td>
-      <img src="figures/gif_output/blur_back_n_forth.gif" width="400">
+      <img src="figures/gif_output/blur_back_n_forth.gif" width="375">
     </td>
     <td>
-      <img src="figures/gif_output/haze_back_n_forth.gif" width="400">
+      <img src="figures/gif_output/haze_back_n_forth.gif" width="375">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="figures/gif_output/lowlight_back_n_forth.gif" width="400">
+      <img src="figures/gif_output/lowlight_back_n_forth.gif" width="375">
     </td>
     <td>
-      <img src="figures/gif_output/rain_back_n_forth.gif" width="400">
+      <img src="figures/gif_output/rain_back_n_forth.gif" width="375">
     </td>
   </tr>
 </table>
