@@ -63,12 +63,24 @@ In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 ## Visual Comparison
 <table>
   <tr>
-    <td><img src="figures/gif_output/blur_back_n_forth.gif" width="250"></td>
-    <td><img src="figures/gif_output/haze_back_n_forth.gif" width="250"></td>
+    <td>
+      <img src="figures/gif_output/blur_back_n_forth.gif" width="500">
+      <figcaption>Blur</figcaption>
+    </td>
+    <td>
+      <img src="figures/gif_output/haze_back_n_forth.gif" width="500">
+      <figcaption>Haze</figcaption>
+    </td>
   </tr>
   <tr>
-    <td><img src="figures/gif_output/lowlight_back_n_forth.gif" width="250"></td>
-    <td><img src="figures/gif_output/rain_back_n_forth.gif" width="250"></td>
+    <td>
+      <img src="figures/gif_output/lowlight_back_n_forth.gif" width="500">
+      <figcaption>Lowlight</figcaption>
+    </td>
+    <td>
+      <img src="figures/gif_output/rain_back_n_forth.gif" width="500">
+      <figcaption>Rain</figcaption>
+    </td>
   </tr>
 </table>
 
