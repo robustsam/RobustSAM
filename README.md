@@ -64,11 +64,11 @@ In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 <table>
   <tr>
     <td>
-      <img src="figures/gif_output/blur_back_n_forth.gif" width="500">
-      <figcaption>Blur</figcaption>
+      <div class="figure-title">Blur</div>
+      <img src="figures/gif_output/blur_back_n_forth.gif" width="350">
     </td>
     <td>
-      <img src="figures/gif_output/haze_back_n_forth.gif" width="500">
+      <img src="figures/gif_output/haze_back_n_forth.gif" width="350">
       <figcaption>Haze</figcaption>
     </td>
   </tr>
