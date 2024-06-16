@@ -4,13 +4,14 @@ Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
 
 
-[Project Page](https://robustsam.github.io/) | [Paper]() | [Video]() | [Dataset]()
-
+[Project Page](https://robustsam.github.io/) | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_RobustSAM_Segment_Anything_Robustly_on_Degraded_Images_CVPR_2024_paper.html) | [Video](https://www.youtube.com/watch?v=Awukqkbs6zM) | [Dataset](https://robustsam.github.io/)
 
 
 ## Updates
 - Feb 2024: ✨ RobustSAM was accepted into CVPR 2024!
+- June 2024: ✨ Inference code of RobustSAM was released!
 
+## Introduction
 
 ## Setup
 1) Create a conda environment and activate it.
@@ -54,7 +55,17 @@ python eval.py
 ```
 In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 
-
+## Visual Comparison
+<table>
+  <tr>
+    <td><img src="visual_demo/1.gif" width="250"></td>
+    <td><img src="visual_demo/2.gif" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="visual_demo/4.gif" width="250"></td>
+    <td><img src="visual_demo/5.gif" width="250"></td>
+  </tr>
+</table>
 
 ## Reference
 If you find this work useful, please consider citing us!
