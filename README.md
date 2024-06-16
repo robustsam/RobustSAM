@@ -32,12 +32,28 @@ nvidia-smi
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu[$YOUR_CUDA_VERSION]
 # For example: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117 # cu117 = CUDA_version_11.7
 ```
-4) Install remaining dependencies
+5) Install remaining dependencies
 ```
 pip install -r requirements.txt
 ```
 
+6) Download pretrained RobustSAM checkpoint.
+```
+wget https://drive.google.com/file/d/197EEnWYvchupfJrK44-ki3wDhv3-UuGv/view?usp=sharing
+```
+
 ## Demo
+We have prepared some images im **demo_images** folder for demo purpose. Besides, two prompting modes are available (box prompts and point prompts).
+- For box prompt:
+```
+python eval.py --bbox
+```
+- For point prompt:
+```
+python eval.py
+```
+In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
+
 
 
 ## Reference
