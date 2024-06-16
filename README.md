@@ -91,7 +91,7 @@ In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 <img width="720" alt="image" src='figures/unseen_dataset_with_synthetic_degradation.PNG'>
 
 ### Unseen dataset with real degradation
-<img width="640" alt="image" src='figures/unseen_dataset_with_real_degradation.PNG'>
+<img width="600" alt="image" src='figures/unseen_dataset_with_real_degradation.PNG'>
 
 ## Reference
 If you find this work useful, please consider citing us!
