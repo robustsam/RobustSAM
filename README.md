@@ -62,18 +62,18 @@ In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 <table>
   <tr>
     <td>
-      <img src="figures/gif_output/blur_back_n_forth.gif" width="375">
+      <img src="figures/gif_output/blur_back_n_forth.gif" width="390">
     </td>
     <td>
-      <img src="figures/gif_output/haze_back_n_forth.gif" width="375">
+      <img src="figures/gif_output/haze_back_n_forth.gif" width="390">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="figures/gif_output/lowlight_back_n_forth.gif" width="375">
+      <img src="figures/gif_output/lowlight_back_n_forth.gif" width="390">
     </td>
     <td>
-      <img src="figures/gif_output/rain_back_n_forth.gif" width="375">
+      <img src="figures/gif_output/rain_back_n_forth.gif" width="390">
     </td>
   </tr>
 </table>
