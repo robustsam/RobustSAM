@@ -59,7 +59,7 @@ python eval.py
 In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 
 ## Comparison of computational requirements
-<img width="1096" alt="image" src='figures/Computational requirements.jpg'>
+<img width="1096" alt="image" src='figures/Computational requirements.PNG'>
 
 ## Visual Comparison
 <table>
@@ -80,7 +80,7 @@ In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
     </td>
   </tr>
 </table>
-##
+
 <img width="1096" alt="image" src='figures/qualitative_result.PNG'>
 
 ## Quantitative Comparison
