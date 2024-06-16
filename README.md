@@ -59,7 +59,7 @@ python eval.py
 In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 
 ## Comparison of computational requirements
-<img width="1096" alt="image" src='figures/Computational requirements.PNG'>
+<img width="720" alt="image" src='figures/Computational requirements.PNG'>
 
 ## Visual Comparison
 <table>
@@ -85,13 +85,13 @@ In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 
 ## Quantitative Comparison
 ### Seen dataset with synthetic degradation
-<img width="1096" alt="image" src='figures/seen_dataset_with_synthetic_degradation.PNG'>
+<img width="720" alt="image" src='figures/seen_dataset_with_synthetic_degradation.PNG'>
 
 ### Unseen dataset with synthetic degradation
-<img width="1096" alt="image" src='figures/unseen_dataset_with_synthetic_degradation.PNG'>
+<img width="720" alt="image" src='figures/unseen_dataset_with_synthetic_degradation.PNG'>
 
 ### Unseen dataset with real degradation
-<img width="1096" alt="image" src='figures/unseen_dataset_with_real_degradation.PNG'>
+<img width="720" alt="image" src='figures/unseen_dataset_with_real_degradation.PNG'>
 
 ## Reference
 If you find this work useful, please consider citing us!
