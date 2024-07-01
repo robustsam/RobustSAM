@@ -2,7 +2,7 @@
 
 Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
-Training code, dataset, and models with different ViT backbones will be released before Aug!
+✨ Training code, dataset, and models with different ViT backbones will be released before Aug!
 
 
 [Project Page](https://robustsam.github.io/) | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_RobustSAM_Segment_Anything_Robustly_on_Degraded_Images_CVPR_2024_paper.html) | [Video](https://www.youtube.com/watch?v=Awukqkbs6zM) | [Dataset](https://robustsam.github.io/)
