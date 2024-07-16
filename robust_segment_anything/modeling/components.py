@@ -204,20 +204,20 @@ class FGMBlock(nn.Module):
         super(FGMBlock, self).__init__()
         self.num_channels = 2 * vit_dim
         self.conv_layer = nn.Conv2d(self.num_channels, self.num_channels, kernel_size=1)
-        self.softmax = nn.Softmax(dim=1)
 
     def forward(self, x):
-        fft_map = torch.fft.fft2(x, dim=(-2, -1)) 
- 
-        original_magnitude = torch.abs(fft_map)
-        phase = torch.angle(fft_map)
-        modified_magnitude = self.conv_layer(original_magnitude)
-
-        real_part = modified_magnitude * torch.cos(phase)
-        imag_part = modified_magnitude * torch.sin(phase)
-        modified_fft_map = torch.complex(real_part, imag_part)
+        fft_map = torch.fft.fft2(x, dim=(-2, -1))
         
-        return x
+        magnitude_map = torch.abs(fft_map)
+        phase_map = torch.angle(fft_map)
+        
+        modified_magnitude = self.conv_layer(magnitude_map)
+        
+        real_part = modified_magnitude * torch.cos(phase_map)
+        imag_part = modified_magnitude * torch.sin(phase_map)
+        modified_fft_map = torch.complex(real_part, imag_part)
 
-
+        reconstructed_x = torch.real(torch.fft.ifft2(modified_fft_map, dim=(-2, -1)))
+        
+        return reconstructed_x
 
