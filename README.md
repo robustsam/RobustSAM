@@ -45,7 +45,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install -r requirements.txt
 ```
 
-6) Download pretrained [RobustSAM checkpoint](https://drive.google.com/file/d/197EEnWYvchupfJrK44-ki3wDhv3-UuGv/view?usp=sharing) and place into current directory.
+6) Download pretrained [RobustSAM checkpoint](https://drive.google.com/file/d/1NCZ2y9VyLBie-hL4kPwnl2yzS0QL-ti2/view?usp=sharing) and place into current directory.
 
 ## Demo
 We have prepared some images im **demo_images** folder for demo purpose. Besides, two prompting modes are available (box prompts and point prompts).
