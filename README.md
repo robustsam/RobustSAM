@@ -9,6 +9,7 @@ Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
 
 ## Updates
+- July 2024: ✨ Checkpoints for corresponding model size have been released!
 - June 2024: ✨ Inference code has been released!
 - Feb 2024: ✨ RobustSAM was accepted into CVPR 2024!
 
