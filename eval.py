@@ -44,10 +44,11 @@ parser.add_argument('--gpu', type=int, default=0)
 parser.add_argument("--data_dir", type=str, default="demo_images")
 parser.add_argument("--bbox", action='store_true')
 parser.add_argument("--model_size", type=str, default="l")
-parser.add_argument("--checkpoint_path", type=str, default="robustsam_checkpoint.pth")
+parser.add_argument("--checkpoint_path", type=str, default="robustsam_checkpoint_l.pth")
 
 opt = parser.parse_args()
-       
+
+opt.checkpoint_path = 'robustsam_checkpoint_{}.pth'.format(opt.model_size)    
 model = sam_model_registry["vit_{}".format(opt.model_size)](opt=opt, checkpoint=opt.checkpoint_path)
 
 model = model.to(opt.gpu)
@@ -71,12 +72,12 @@ point_list = [np.array([[131, 233], [186, 84], [266, 54]]), # blur
 if opt.bbox:
     input = zip(image_list, box_list)
     print('Use bounding box as prompt !')
-    save_dir = os.path.join('demo_result', 'box')
+    save_dir = os.path.join('demo_result', 'box_{}'.format(opt.model_size))
 
 else: 
     input = zip(image_list, point_list)
     print('Use point as prompt !')
-    save_dir = os.path.join('demo_result', 'point')
+    save_dir = os.path.join('demo_result', 'point_{}'.format(opt.model_size))
 
 os.makedirs(save_dir, exist_ok=True)
 print('Result will be saved to {} ...'.format(save_dir))
@@ -122,11 +123,4 @@ for (image_path, prompt) in tqdm(input):
     plt.savefig(save_path, bbox_inches='tight')
 
 print('Finish inferencing...')
-
-
-
-
-
-
-
 
