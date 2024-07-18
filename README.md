@@ -54,11 +54,11 @@ pip install -r requirements.txt
 We have prepared some images im **demo_images** folder for demo purpose. Besides, two prompting modes are available (box prompts and point prompts).
 - For box prompt:
 ```
-python eval.py --bbox
+python eval.py --bbox --model_size l
 ```
 - For point prompt:
 ```
-python eval.py
+python eval.py --model_size l
 ```
 In default, demo results will be saved to **demo_result/[$PROMPT_TYPE]**.
 
