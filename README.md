@@ -45,7 +45,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install -r requirements.txt
 ```
 
-6) Download pretrained [RobustSAM checkpoint](https://drive.google.com/file/d/1NCZ2y9VyLBie-hL4kPwnl2yzS0QL-ti2/view?usp=sharing) and place into current directory.
+6) Download pretrained RobustSAM checkpoints of different sizes and place them into current directory.
+   - [ViT-B RobustSAM checkpoint](https://drive.google.com/file/d/1PKDfQq31qw1VVjYS_BrMn2aIE99PSLTM/view?usp=sharing)
+   - [ViT-L RobustSAM checkpoint](https://drive.google.com/file/d/1lu4p-jkqxQ96fAvjrF90ZlJZjNg_7m8o/view?usp=sharing)
+   - [ViT-H RobustSAM checkpoint](https://drive.google.com/file/d/19vMIGJ2m7YIBAb-wFNUAOwaHB27bSFoi/view?usp=sharing)
 
 ## Demo
 We have prepared some images im **demo_images** folder for demo purpose. Besides, two prompting modes are available (box prompts and point prompts).
