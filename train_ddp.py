@@ -32,14 +32,15 @@ from dataset import TrainDataset
 parser = argparse.ArgumentParser()
 parser.add_argument('--batch_size', type=int, default=2, help='training batch size')
 parser.add_argument('--epochs', type=int, default=20, help='number of epochs to train for')
-parser.add_argument('--lr', type=float, default=1e-4, help='Learning Rate. Default=0.0001')
-parser.add_argument('--num_points', type=int, default=3, help='Number of point prompts used during training')
+parser.add_argument('--lr', type=float, default=1e-4, help='learning rate, default=0.0001')
+parser.add_argument('--num_points', type=int, default=3, help='number of point prompts used during training')
 
-parser.add_argument("--continue_training", action='store_true')
-parser.add_argument("--exp_name", type=str, default="")
-parser.add_argument("--model_size", type=str, default="l")
-parser.add_argument("--data_dir", type=str, default="data/all_data")
-parser.add_argument("--save_dir", type=str, default="checkpoints")
+parser.add_argument("--continue_training", action='store_true', help='continue training using specific experiment checkpoint')
+parser.add_argument("--load_model", type=str, default=None, help='initialize model checkpoint using pretrained model')
+parser.add_argument("--exp_name", type=str, default="", help='experiment name which is used as saved checkpoint name')
+parser.add_argument("--model_size", type=str, default="l", help='size of ViT model in current RobustSAM architecture')
+parser.add_argument("--data_dir", type=str, default="data/all_data", help='data root')
+parser.add_argument("--save_dir", type=str, default="checkpoints", help='folder to save your checkpoint')
 
 
 parser.add_argument(
@@ -137,6 +138,11 @@ def main_worker(gpu, ngpus_per_node, opt):
         train_flag = True         
         print('Using pretrained checkpoint. Model Path: {} ...'.format(model_sam_path))
     
+    elif opt.load_model is not None:
+        model_sam_path = opt.load_model
+        train_flag = True         
+        print('Using pretrained checkpoint. Model Path: {} ...'.format(model_sam_path))
+        
     else: 
         model_sam_path = None
         print('Train from scratch ... ')
