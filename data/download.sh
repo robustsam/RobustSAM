@@ -29,7 +29,7 @@ cd ..
 
 echo " "
 echo " ##############################################################################################"
-echo "=> Start downloading test dataset (consists of image from MSRA, NDD20, STREETS and FSS-1000) <=="
+echo "=> Start downloading test dataset (consists of image from MSRA10K, NDD20, STREETS and FSS-1000) <=="
 echo " ##############################################################################################"
 echo " "
 mkdir test
