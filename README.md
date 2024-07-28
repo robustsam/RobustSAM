@@ -47,16 +47,16 @@ pip install -r requirements.txt
 ```
 
 6) Download pretrained RobustSAM checkpoints of different sizes and place them into current directory.
-   - [ViT-B RobustSAM checkpoint](https://drive.google.com/file/d/1PKDfQq31qw1VVjYS_BrMn2aIE99PSLTM/view?usp=sharing)
-   - [ViT-L RobustSAM checkpoint](https://drive.google.com/file/d/1lu4p-jkqxQ96fAvjrF90ZlJZjNg_7m8o/view?usp=sharing)
-   - [ViT-H RobustSAM checkpoint](https://drive.google.com/file/d/19vMIGJ2m7YIBAb-wFNUAOwaHB27bSFoi/view?usp=sharing)
+   - [ViT-B RobustSAM checkpoint](https://huggingface.co/robustsam/robustsam/resolve/main/model_checkpoint/robustsam_checkpoint_b.pth)
+   - [ViT-L RobustSAM checkpoint](https://huggingface.co/robustsam/robustsam/resolve/main/model_checkpoint/robustsam_checkpoint_l.pth)
+   - [ViT-H RobustSAM checkpoint](https://huggingface.co/robustsam/robustsam/resolve/main/model_checkpoint/robustsam_checkpoint_h.pth)
 
 ## Data Preparation
 1) Change current directory to "data" directory.
 ```
 cd data
 ```
-2) Download train, val, test and extra COCO & LVIS dataset. (NOTE: Images in train, val and test dataset consist images from LVIS, MSRA10K, ThinObject-5k, NDD20, STREETS and FSS-1000)
+2) Download train, val, test and extra COCO & LVIS dataset. (NOTE: Images in train, val and test dataset consist images from [LVIS](https://paperswithcode.com/paper/lvis-a-dataset-for-large-vocabulary-instance-1), [MSRA10K](https://paperswithcode.com/dataset/msra10k), [ThinObject-5k](https://github.com/liewjunhao/thin-object-selection), [NDD20](https://arxiv.org/abs/2005.13359), [STREETS](https://paperswithcode.com/dataset/streets) and [FSS-1000](https://github.com/HKUSTCV/FSS-1000))
 ```
 bash download.sh
 ```
