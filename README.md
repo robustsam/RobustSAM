@@ -51,6 +51,32 @@ pip install -r requirements.txt
    - [ViT-L RobustSAM checkpoint](https://drive.google.com/file/d/1lu4p-jkqxQ96fAvjrF90ZlJZjNg_7m8o/view?usp=sharing)
    - [ViT-H RobustSAM checkpoint](https://drive.google.com/file/d/19vMIGJ2m7YIBAb-wFNUAOwaHB27bSFoi/view?usp=sharing)
 
+## Data Preparation
+1) Change current directory to "data" directory.
+```
+cd data
+```
+2) Download train, val, test and extra COCO & LVIS dataset. (NOTE: Images in train, val and test dataset consist images from LVIS, MSRA10K, ThinObject-5k, NDD20, STREETS and FSS-1000)
+```
+bash download.sh
+```
+3) There are only clear images downloaded in the previous step. Use command below to generate corresponding degraded images. 
+```
+bash gen_data.sh
+```
+
+## Training
+1) If you want to train from scratch, use command below.
+```
+python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name [$YOUR_EXP_NAME] --model_size [$MODEL_SIZE]
+# Example usage: python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name test --model_size l
+```
+2) If you want to train from pretrained checkpoint, use command below.
+```
+python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name [$YOUR_EXP_NAME] --model_size [$MODEL_SIZE] --load_model [$CHECKPOINT_PATH]
+# Example usage: python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name test --model_size l --load_model robustsam_checkpoint_l.pth" 
+```
+
 ## Demo
 We have prepared some images im **demo_images** folder for demo purpose. Besides, two prompting modes are available (box prompts and point prompts).
 - For box prompt:
