@@ -74,7 +74,7 @@ python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed -
 2) If you want to train from pretrained checkpoint, use command below.
 ```
 python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name [$YOUR_EXP_NAME] --model_size [$MODEL_SIZE] --load_model [$CHECKPOINT_PATH]
-# Example usage: python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name test --model_size l --load_model robustsam_checkpoint_l.pth" 
+# Example usage: python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name test --model_size l --load_model robustsam_checkpoint_l.pth
 ```
 
 ## Demo
