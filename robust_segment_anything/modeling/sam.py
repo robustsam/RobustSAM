@@ -98,7 +98,8 @@ class Sam(nn.Module):
         """
 
         input_images = torch.stack([self.preprocess(x["image"]) for x in batched_input], dim=0)
-        image_embeddings, encoder_features = self.image_encoder(input_images)
+        with torch.no_grad():
+            image_embeddings, encoder_features = self.image_encoder(input_images)
         encoder_features = encoder_features[0] 
 
         outputs = []
