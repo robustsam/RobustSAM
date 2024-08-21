@@ -3,15 +3,14 @@
 <a href="https://colab.research.google.com/drive/1mrOjUNFrfZ2vuTnWrfl9ebAQov3a9S6E?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 [![Huggingfaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/robustsam/robustsam/tree/main)
 
-You can refer to the Hugging Face model cards built by @jadechoghari for easier usage via this [link](https://github.com/robustsam/RobustSAM/issues/10#issuecomment-2294327808).
-
-
 Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
 [Project Page](https://robustsam.github.io/) | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_RobustSAM_Segment_Anything_Robustly_on_Degraded_Images_CVPR_2024_paper.html) | [Video](https://www.youtube.com/watch?v=Awukqkbs6zM) | [Dataset](https://huggingface.co/robustsam/robustsam/tree/main/dataset)
 
 
+
 ## Updates
+- Aug 2024: ✨ You can refer to the Hugging Face model cards built by @jadechoghari for easier usage via this [link](https://github.com/robustsam/RobustSAM/issues/10#issuecomment-2294327808).
 - July 2024: ✨ Training code, data and model checkpoints for different ViT backbones are released!
 - June 2024: ✨ Inference code has been released!
 - Feb 2024: ✨ RobustSAM was accepted into CVPR 2024!
