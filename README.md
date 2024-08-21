@@ -2,6 +2,11 @@
 
 <a href="https://colab.research.google.com/drive/1mrOjUNFrfZ2vuTnWrfl9ebAQov3a9S6E?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 [![Huggingfaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/robustsam/robustsam/tree/main)
+You can refer Hugginface model cards built by @jadechoghari:
+[![Huggingfaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://github.com/robustsam/RobustSAM/issues/10#issuecomment-2294327808)
+
+
+
 
 Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
