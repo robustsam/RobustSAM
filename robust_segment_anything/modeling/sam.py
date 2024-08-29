@@ -110,12 +110,13 @@ class Sam(nn.Module):
                 points = (image_record["point_coords"], image_record["point_labels"])
             else:
                 points = None
-        
-            sparse_embeddings, dense_embeddings = self.prompt_encoder(
-                    points=points,
-                    boxes=image_record.get("boxes", None),
-                    masks=image_record.get("mask_inputs", None),
-                )            
+                
+            with torch.no_grad(): 
+                sparse_embeddings, dense_embeddings = self.prompt_encoder(
+                        points=points,
+                        boxes=image_record.get("boxes", None),
+                        masks=image_record.get("mask_inputs", None),
+                    )            
 
             clear = True if i < degraded_index else False
             low_res_masks, iou_predictions, robust_embeddings, robust_token = self.mask_decoder( 
