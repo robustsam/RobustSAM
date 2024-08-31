@@ -7,10 +7,15 @@ Official repository for RobustSAM: Segment Anything Robustly on Degraded Images
 
 [Project Page](https://robustsam.github.io/) | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_RobustSAM_Segment_Anything_Robustly_on_Degraded_Images_CVPR_2024_paper.html) | [Video](https://www.youtube.com/watch?v=Awukqkbs6zM) | [Dataset](https://huggingface.co/robustsam/robustsam/tree/main/dataset)
 
+## HF Model Cards
+
+[![RobustSAM Base](https://img.shields.io/badge/%F0%9F%A4%97%20Base-blue)](https://huggingface.co/jadechoghari/robustsam-vit-base)
+[![RobustSAM Large](https://img.shields.io/badge/%F0%9F%A4%97%20Large-blue)](https://huggingface.co/jadechoghari/robustsam-vit-large)
+[![RobustSAM Huge](https://img.shields.io/badge/%F0%9F%A4%97%20Huge-blue)](https://huggingface.co/jadechoghari/robustsam-vit-huge)
 
 
 ## Updates
-- Aug 2024: ✨ You can refer to the Hugging Face model cards built by @jadechoghari for easier usage via this [link](https://github.com/robustsam/RobustSAM/issues/10#issuecomment-2294327808).
+- Aug 2024: ✨ You can refer to the Hugging Face model cards & demo built by [@jadechoghari](https://github.com/jadechoghari) for easier usage via this [link](https://github.com/robustsam/RobustSAM/issues/10#issuecomment-2294327808).
 - July 2024: ✨ Training code, data and model checkpoints for different ViT backbones are released!
 - June 2024: ✨ Inference code has been released!
 - Feb 2024: ✨ RobustSAM was accepted into CVPR 2024!
@@ -77,6 +82,12 @@ python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed -
 ```
 python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name [$YOUR_EXP_NAME] --model_size [$MODEL_SIZE] --load_model [$CHECKPOINT_PATH]
 # Example usage: python -m torch.distributed.launch train_ddp.py  --multiprocessing-distributed --exp_name test --model_size l --load_model robustsam_checkpoint_l.pth
+```
+
+### Local Gradio App
+
+```
+python gradio_app.py 
 ```
 
 ## Demo
